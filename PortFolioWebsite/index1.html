@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="dark-theme.css">
+    <script src="https://kit.fontawesome.com/7bc41af90e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<!-- NOTE:  Link of icons website is  https://fontawesome.com/docs/web/setup/use-kit -->
+
+
+<body>
+    <!-- -------------------------Home----------------------- -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Portfo<span class="orange">lio</span></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-sun fa-xl" id="theme-switch-button" style="color: #ffffff;"></i></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello,</h1><br>
+                <h2>I am <span class="orange">Himanshu Pal</span><br>and I am a passionate</h2>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------about----------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="theme-image" src="assests/myphoto-dark.jpg" alt="My Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> <br>I am Himanshu Pal from Muzaffarnagar and I recently graduated with B.Tech in Computer
+                        Science from
+                        Graphic Era Hill University in 2023.<br><br>Since I am deeply interested in development. So I
+                        have
+                        successfully developed some diverse projects a patient health record system using Blockchain
+                        technology, a textUtils Website using ReactJs technology,
+                        a News Website using ReactJs technology, and an obstacle-avoiding
+                        surveillance robot using IOT.<br><br>I have also conducted research on an
+                        obstacle-avoidance surveillance robot. I am hopeful software
+                        developer with a strong background in Computer Science and a range of
+                        projects that highlight my coding skills, problem-solving abilities,
+                        and independent project work.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="orange">Advance</span><br>HTML5 , CSS3 , Bootstrap , Responsive designing .
+                            </li>
+                            <li><span class="orange">Intermediate</span><br>JavaScript , React.Js , C/C++ , Python .
+                            </li>
+                            <li><span class="orange">Familiar</span><br>Git/Git Hub , Visual Studio Code .</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="orange">Projects</span><br>A patient health record system using Blockchain
+                                technology, tic-tac-toe game website, textUtils website , News Website and an
+                                obstacle-avoiding surveillance robot . </li>
+                            <li><span class="orange">Research</span><br>I have also conducted research on an
+                                obstacle-avoidance surveillance robot .</li>
+                            <li><span class="orange">Familiar</span><br>I have done a course on computer hardware And
+                                also done a React.Js course .</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="orange">Graduation</span><br>Graphic Era Hill University B.tech CSE in 2023
+                                with 7.86 CGPA .</li>
+                            <li><span class="orange">Intermediate</span><br>Lala Jagdish Prasad Sarswati Vidya Mandir
+                                Inter College with 79.16% .</li>
+                            <li><span class="orange">High School</span><br>Lala Jagdish Prasad Sarswati Vidya Mandir
+                                Inter College with 81.6% .</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------services----------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-flip"></i>
+                    <h2>Website Developement</h2>
+                    <p>Transforming ideas into stunning websites with precision and creativity.
+                        <br><br>We specialise in user-friendly designs that drive online success.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-compare fa-flip"></i>
+                    <h2>Software Development</h2>
+                    <p>Transforming concepts into exceptional software solutions with precision and innovation.
+                        <br><br>We specialise in user-friendly designs that drive online success.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code fa-flip"></i>
+                    <h2>Programming Instructor</h2>
+                    <p> As a devoted Programming Instructor, I'm committed to helping students grow their coding
+                        skills and grasp fundamental programming concepts.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------------------------------projects---------------------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+
+            <div id="work-list">
+
+                <div class="work">
+                    <img src="assests/w1.jpg" />
+                    <div class="layer">
+                        <h1>Tic-Tac-Toe</h1>
+                        <p> &nbsp; Challenge your friends to a classic game of tic-tac-toe and see who's the 
+                            ultimate strategist!.</p>
+                        <a  onclick="openVideo('tic-tac-toe-video.mp4')"><i class="fas fa-external-link-alt"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="assests/w2.jpg" />
+                    <div class="layer">
+                        <h1>TextUtils</h1>
+                        <p>
+                            TextUtils is a word counter and a character counting utility which
+                            can be used to manipulate your text in the way you want and also can check your typing speed
+                            here.
+                        </p>
+                        <a onclick="openVideo('textUtils-video.mp4')"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="assests/w3.jpg" />
+                    <div class="layer">
+                        <h1>RecentNews</h1>
+                        <p>Stay informed with RecentNews, your go-to Website for the latest headlines 
+                            and breaking news from around the India.
+                        </p>
+                        <a onclick="openVideo('newsapp-video.mp4')"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="work hidden">
+                    <img src="assests/w4.jpg" />
+                    <div class="layer">
+                        <h1>stammerPAD</h1>
+                        <p>Your Confidence Companion for Successful Interviews</p>
+                        <a  onclick="openVideo('stammerPAD-video.mp4')"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- add when complete
+                 <div class="work hidden">
+                    <img src="assests/w5.jpg" />
+                    <div class="layer">
+                        <h1>iNoteBook</h1>
+                        <p>Organize your thoughts and ideas with iNoteBook your personal notebook on the go.
+                        </p>
+                        <a  onclick="openVideo('iNotebook.mp4')"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  -->
+
+                <div class="work hidden">
+                    <img src="assests/w6.jpg" />
+                    <div class="layer">
+                        <h1>obstacle-Avoiding-surveillance robot</h1>
+                        <p> &nbsp; An intelligent obstacle-avoiding-surveillance robot equipped with sensors that 
+                            effortlessly navigate through challenging environments!.</p>
+                        <a onclick="openVideo('obstaclerobot-video.mp4')"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn" id="see-more-button">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------------contact---------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>officialwork19011252@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8958468722</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/himaaanshupal03/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/himanshu-pal-graphic/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Himanshupal19011252"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assests/fontend_resume_u1.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; made by Himanshu Pal</p>
+        </div>
+    </div>
+
+<script>
+    function openVideo(videoUrl) {
+        // Open a new window or tab and load the video in it
+        var newWindow = window.open(videoUrl, "VideoWindow", "width=600,height=400");
+
+        // Focus on the new window
+        newWindow.focus();
+    }
+</script>
+
+    
+
+    <script>
+        const themeSwitchButton = document.getElementById('theme-switch-button');
+        const themeStylesheet = document.getElementById('theme-stylesheet');
+        const themeImage = document.getElementById('theme-image');
+
+        themeSwitchButton.addEventListener('click', () => {
+            if (themeStylesheet.href.includes('light-theme')) {
+                themeSwitchButton.style.color='#ffffff'
+                themeStylesheet.href = 'dark-theme.css?' + new Date().getTime();
+                themeImage.src = 'assests/myphoto-dark.jpg?'+ new Date().getTime();
+                
+            } else {
+                themeSwitchButton.style.color='#000000'
+                themeStylesheet.href = 'light-theme.css?' + new Date().getTime();
+                themeImage.src = 'assests/myphoto-light.jpg?'+ new Date().getTime();
+            }
+        });
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxogJ_ybZdHBmEMsr6v63pNgQPP5VcMS5RmAnBKOD4uhduJB2B8oj_4Fpm9f1wRZrE/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            msg.innerHTML = '<i class="fa-solid fa-spinner fa-spin-pulse" style="color: #f78e05; font-size: 35px;"></i>';
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const seeMoreButton = document.getElementById("see-more-button");
+            const hiddenProjects = document.querySelectorAll(".work.hidden");
+
+            let isShowingAllProjects = false;
+
+            seeMoreButton.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                if (!isShowingAllProjects) {
+                    // Show the hidden projects
+                    hiddenProjects.forEach(function (project) {
+                        project.style.display = "block";
+                    });
+                    seeMoreButton.textContent = "Show less"; // Change button text
+                } else {
+                    // Hide the hidden projects
+                    hiddenProjects.forEach(function (project) {
+                        project.style.display = "none";
+                    });
+                    seeMoreButton.textContent = "See more"; // Change button text
+                }
+
+                isShowingAllProjects = !isShowingAllProjects; // Toggle the flag
+            });
+        });
+
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer','Web Developer','Programming Instructor','Front-End Developer'],
+            typeSpeed: 80,
+        });
+    </script>
+
+</body>
+
+</html>
