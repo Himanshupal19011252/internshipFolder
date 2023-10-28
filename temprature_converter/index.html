@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container flex">
+        <h1 id="weatherheading">Weather</h1>
+        <div class="card-container">
+            <h2>Temperature Converter</h2>
+            <div class="input-section">
+                <label class="celcius" for="celcius">Celsius:</label>
+                <input type="text" id="celcius">
+            </div>
+            <div class="input-section">
+                <label class="kelvin" for="kelvin">Kelvin:</label>
+                <input type="text" id="kelvin">
+            </div>
+            <div class="input-section">
+                <label class="fahrenheit" for="fahrenheit">Fahrenheit:</label>
+                <input type="text" id="fahrenheit">
+            </div>
+            <input type="submit" value="Convert" onclick="Convertor()">
+            <input type="reset" value="Reset" onclick="Reset()">
+            <p>Please reset when you use it again</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

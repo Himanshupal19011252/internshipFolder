@@ -1,0 +1,152 @@
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./image/startingbg.jpg'); 
+    background-size: cover;
+}
+
+/* utility class */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* main container */
+.main-container{
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    gap:40px;
+}
+
+/* weatherheading*/
+h1{
+    margin-top: 40px;
+    background-color: #007bff;
+    width:400px;
+    border-radius: 5px;
+    padding-block: 8px;
+    padding-inline: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*  card container */
+.card-container {
+    background-color: #ffffff;
+    text-align: center;
+    width: 400px;
+    padding: 38px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/*  temperature converter text */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* input section */
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-right: 320px;
+}
+
+/* input labels */
+label {
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+    width: 100px; 
+}
+
+/* class for set all three labels */
+.celcius{
+    margin-right: 40px;
+}
+
+.kelvin{
+    margin-right: 51px;
+}
+
+.fahrenheit{
+    margin-right: 15px;
+}
+
+/* text input field*/
+
+input[type="text"] {
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+
+/* submit input field*/
+
+input[type=submit] {
+    width: 67%;
+    display: inline-block;
+    background-color: #1862ca;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    margin-left: -10px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #5998f0;
+  }
+
+  /* reset input field*/
+
+input[type=reset] {
+    display: inline-block;
+    width: 32%;
+    background-color: #256dd1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=reset]:hover {
+    background-color: #5998f0;
+  }
+
+  /* warning for reset again */
+  p{
+    color: #504e4e;
+    margin-top:5px;
+    margin-left: -75px;
+  }

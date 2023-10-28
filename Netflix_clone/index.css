@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Ubuntu:wght@400;500;900&display=swap');
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #ffffff;
+    --secondy-text-color: rgba(255, 255, 255, 0.7);
+    --accent-color-dark: #E50914;
+    --accent-color: #c71e26;
+    --padding-inline-section: 3vw;
+}
+
+
+body {
+    background-color: black;
+    font-family: 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* utility-classes */
+
+.container {
+    max-width: 1150px;
+    padding-inline: var(--padding-inline-section);
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.desc-container {
+    width: 100%;
+}
+
+.right-container {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.primary-button {
+    background-color: var(--accent-color-dark);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    padding: 6px 14px 8px;
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color);
+}
+
+.image-video-container {
+    width: 100%;
+    position: relative;
+}
+
+.email-section {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0px;
+}
+
+
+input[type=email] {
+    background-color: rgba(20, 19, 20, 0.8);
+    border: 1px solid #BCBBBB;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    padding-inline: 10px;
+    padding-block: 13px;
+    width: 82vw;
+    border-radius: 4px;
+}
+
+input[type=email]:focus {
+    border: 2px solid #BCBBBB;
+    outline: none;
+}
+
+
+input[type=submit] {
+    background-color: var(--accent-color-dark);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    padding-block: 13px;
+    padding-inline: 6vw;
+    color: var(--primary-text-color);
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--accent-color);
+}
+
+
+section,
+footer {
+    border-top: 8px solid #232323;
+    padding-block: 50px;
+}
+
+/* navigation bar */
+
+.nav-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo-container {
+    min-width: 120px;
+    width: 13vmax;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.navbar_right_items {
+    width: 200px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dropdown_container {
+    border: 1px solid white;
+    background: rgba(26, 25, 25, 0.8);
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+
+}
+
+.language_drop_down {
+    background: rgba(26, 25, 25, 0.8);
+    border: none;
+    color: white;
+}
+
+/* main section */
+
+
+.main-section {
+    border-top: 0;
+    padding-block: 0;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+
+
+.hero_bg_img_cont {
+    width: 100%;
+    height: 100%;
+}
+
+.hero_bg_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_bg_overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background-size: cover;
+}
+
+
+.main-section-desc-container {
+    position: absolute;
+    padding-inline: 15px;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 100px;
+    gap: 20px;
+
+}
+
+.main-section-desc-container h1 {
+    margin-bottom: -10px;
+}
+
+.main-section-desc-container p {
+    padding-inline: 30px;
+}
+
+
+/* section-1 */
+
+.section-1-container {
+    flex-direction: column;
+    padding-inline: 20px;
+}
+
+.section-1-desc {
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.section-1-img img {
+    position: relative;
+    width: 100%;
+}
+
+.section-1-video video {
+    position: absolute;
+    width: 80%;
+    bottom: 20%;
+    left: 10%;
+    z-index: -1;
+}
+
+/* section-2 */
+
+.section-2-container {
+    flex-direction: column-reverse;
+    padding-inline: 20px;
+}
+
+.section-2-desc {
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-2-img img {
+    width: 100%;
+    background-size: cover;
+}
+
+/* section-3 */
+
+.section-3-container {
+    flex-direction: column;
+    padding-inline: 20px;
+    gap: 20px;
+}
+
+.section-3-desc {
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-3-img img {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.section-3-video video {
+    position: absolute;
+    width: 60%;
+    bottom: 43%;
+    left: 20%;
+    z-index: -1;
+}
+
+/* section-4 */
+
+.section-4-container {
+    flex-direction: column-reverse;
+    padding-inline: 20px;
+}
+
+.section-4-desc {
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-4-img img {
+    width: 100%;
+    background-size: cover;
+}
+
+/* cta-section */
+
+
+.cta-section-container {
+    flex-direction: column;
+    padding-inline: 20px;
+    text-align: center;
+    gap: 10px;
+}
+
+/* ........cta-section accordian...........*/
+
+.accordion {
+    width: 100%;
+}
+
+/* ........Button default resets.......... */
+
+.accordion button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* .......Styling the accordion header........ */
+
+.accordion-header {
+    width: 100%;
+    background-color: #303030;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding-inline: 20px;
+    padding-block: 22px;
+    cursor: pointer;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 3px;
+
+}
+
+/* .......adding the plus sign (+)......... */
+
+.accordion-header::after {
+    font-family: 'Times New Roman', Times, serif;
+    content: '+';
+    font-size: 24px;
+    font-weight: 600;
+    right: 20px;
+}
+
+.accordion-header:hover {
+    background-color: #424141;
+}
+
+.panel {
+    background-color: #303030;
+    color: #fff;
+    margin-top: -2px;
+    margin-bottom: 7px;
+    text-align: start;
+    overflow: hidden;
+    transition: max-height 0.33s cubic-bezier(.5, 0, .1, 1);
+}
+
+.panel>p {
+    font-size: 19px;
+    padding: 10px 20px;
+}
+
+.panel p {
+    padding-block: 20px;
+}
+
+.panel-closed {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.panel-open {
+    max-height: 700px;
+}
+
+/* ......active class for accordion, adds the "cross sign (x)"....... */
+
+.accordion-active::after {
+    transform: rotate(135deg);
+}
+
+/* cta-section email and paragraph*/
+
+.cta-paragraph {
+    margin-top: 20px;
+}
+
+
+
+/* footer */
+
+.footer-section-conatiner {
+    padding-inline: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-section-conatiner p {
+    font-size: 17px;
+    color: var(--secondy-text-color);
+}
+
+.footer-col-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer a {
+    margin-bottom: 14px;
+    color: var(--secondy-text-color);
+    text-decoration: underline;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    display: grid;
+    grid-template-columns: auto;
+    padding-right: 15vw;
+}
+
+footer {
+    padding-block: 25px;
+}
